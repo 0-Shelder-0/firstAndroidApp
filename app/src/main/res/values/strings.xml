@@ -1,0 +1,33 @@
+<resources>
+    <string name="appName">My Application</string>
+    <string name="personalAreaHeader">Личный кабинет</string>
+    <string name="rubleIcon">ruble_icon</string>
+    <string name="balanceDescription">Ваш баланс</string>
+    <string name="userDescription">Пользователь</string>
+    <string name="tariffDescription">Тариф</string>
+    <string name="buttonDescription">Пополнить</string>
+
+    <string-array name="tariffNames">
+        <item>Тариф «Улыбка» (бесплатные звонки)</item>
+        <item>Тариф «Чат» (бесплатные СМС)</item>
+        <item>Тариф «Смотри» (бесплатный онлайн-кинотеатр)</item>
+    </string-array>
+
+    <string-array name="tariffInfoList">
+        <item>Скорость до 100 Мбит/с</item>
+        <item>Скорость до 10 Мбит/с</item>
+        <item>Скорость до 300 Мбит/с</item>
+    </string-array>
+
+    <string-array name="userInfoList">
+        <item>Иванов Иван Иванович</item>
+        <item>Сахалин, ул. Пушкина, д. 79, кв. 35</item>
+        <item>Доступные услуги</item>
+    </string-array>
+
+    <string-array name="userIcons">
+        <item>account</item>
+        <item>home</item>
+        <item>dashboard</item>
+    </string-array>
+</resources>

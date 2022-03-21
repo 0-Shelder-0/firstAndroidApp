@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#0C000000"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/user_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/rubleIcon"
+        android:src="@drawable/ruble" />
+
+    <TextView
+        android:id="@+id/user_info"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/user_icon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Иванов Иван Иванович"
+        android:textColor="#000000" />
+
+</RelativeLayout>
