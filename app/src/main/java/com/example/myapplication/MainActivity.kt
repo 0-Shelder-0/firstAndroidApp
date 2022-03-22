@@ -26,13 +26,23 @@ class MainActivity : AppCompatActivity() {
     private fun getTariffs(): List<Tariff> {
         val tariffNames = this.resources.getStringArray(R.array.tariffNames).toList()
         val tariffInfoList = this.resources.getStringArray(R.array.tariffInfoList).toList()
+        val tariffCostList = this.resources.getStringArray(R.array.tariffCostList).toList()
         val results: MutableList<Tariff> = mutableListOf()
 
         for ((index, name) in tariffNames.withIndex()) {
-            if (tariffInfoList.size > index) {
-                val tariff = Tariff(name, tariffInfoList[index])
-                results.add(tariff)
+            var info = ""
+            var cost = ""
+
+            if (tariffCostList.size > index) {
+                cost = tariffCostList[index]
             }
+
+            if (tariffInfoList.size > index) {
+                info = tariffInfoList[index]
+            }
+
+            val tariff = Tariff(name, info, cost)
+            results.add(tariff)
         }
 
         return results.toList()

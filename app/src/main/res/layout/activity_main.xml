@@ -20,79 +20,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RelativeLayout
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/main_layout"
+        android:name="com.example.myapplication.fragments.AccountFragment"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:layout_marginTop="10dp"
-        android:background="#0C000000"
         app:layout_constraintEnd_toEndOf="@id/header"
         app:layout_constraintStart_toStartOf="@+id/header"
-        app:layout_constraintTop_toBottomOf="@+id/header">
-
-        <ImageView
-            android:id="@+id/ruble_icon"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:adjustViewBounds="true"
-            android:contentDescription="@string/rubleIcon"
-            android:src="@drawable/ruble" />
-
-        <TextView
-            android:id="@+id/balance_description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_toEndOf="@+id/ruble_icon"
-            android:text="@string/balanceDescription"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/personal_account"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/balance_description"
-            android:layout_toEndOf="@+id/ruble_icon"
-            android:text="ЛС: 12121212"
-            android:textColor="#99000000" />
-
-        <TextView
-            android:id="@+id/balance"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="10dp"
-            android:text="100.42 Р"
-            android:textColor="#3F51B5" />
-
-        <TextView
-            android:id="@+id/to_pay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/ruble_icon"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginBottom="10dp"
-            android:text="К оплате за сентябрь: 0.00Р"
-            android:textColor="#99000000"
-            app:layout_constraintStart_toStartOf="@id/ruble_icon" />
-
-        <Button
-            android:id="@+id/pay_button"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_alignBottom="@+id/to_pay"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="10dp"
-            android:background="#00000000"
-            android:padding="0dp"
-            android:text="@string/buttonDescription"
-            android:textColor="@color/design_default_color_error"
-            android:textSize="10sp" />
-    </RelativeLayout>
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        tools:layout="@layout/account_fragment" />
 
     <TextView
         android:id="@+id/tariff_header"

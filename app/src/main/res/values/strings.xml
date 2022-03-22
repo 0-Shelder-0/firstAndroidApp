@@ -6,6 +6,9 @@
     <string name="userDescription">Пользователь</string>
     <string name="tariffDescription">Тариф</string>
     <string name="buttonDescription">Пополнить</string>
+    <string name="accountDescription">ЛС:</string>
+    <string name="debtDescription">К оплате за сентябрь:</string>
+    <string name="currency">₽</string>
 
     <string-array name="tariffNames">
         <item>Тариф «Улыбка» (бесплатные звонки)</item>
@@ -17,6 +20,12 @@
         <item>Скорость до 100 Мбит/с</item>
         <item>Скорость до 10 Мбит/с</item>
         <item>Скорость до 300 Мбит/с</item>
+    </string-array>
+
+    <string-array name="tariffCostList">
+        <item>300</item>
+        <item>250</item>
+        <item>600</item>
     </string-array>
 
     <string-array name="userInfoList">

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C000000">
+
+    <ImageView
+        android:id="@+id/ruble_icon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/rubleIcon"
+        android:src="@drawable/ruble" />
+
+    <TextView
+        android:id="@+id/balance_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/ruble_icon"
+        android:text="@string/balanceDescription"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/personal_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/balance_description"
+        android:layout_toEndOf="@+id/ruble_icon"
+        android:text="@string/accountDescription"
+        android:textColor="#99000000" />
+
+    <TextView
+        android:id="@+id/account_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/balance_description"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/personal_account"
+        android:text="1111"
+        android:textColor="#99000000" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/balance_currency"
+        android:text="100.42"
+        android:textColor="#3F51B5" />
+
+    <TextView
+        android:id="@+id/balance_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/currency"
+        android:textColor="#3F51B5" />
+
+    <TextView
+        android:id="@+id/debt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ruble_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/debtDescription"
+        android:textColor="#99000000" />
+
+    <TextView
+        android:id="@+id/sum_debt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/debt_description"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="0.00"
+        android:textColor="#99000000" />
+
+    <TextView
+        android:id="@+id/debt_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/sum_debt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/currency"
+        android:textColor="#99000000"
+        app:layout_constraintStart_toStartOf="@id/ruble_icon" />
+
+    <Button
+        android:id="@+id/pay_button"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/debt_description"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:background="#00000000"
+        android:padding="0dp"
+        android:text="@string/buttonDescription"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="10sp" />
+</RelativeLayout>
