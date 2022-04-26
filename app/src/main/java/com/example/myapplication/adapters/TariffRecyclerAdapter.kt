@@ -7,9 +7,9 @@ import android.widget.TextView
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
-import com.example.myapplication.models.Tariff
+import com.example.myapplication.models.TariffModel
 
-class TariffRecyclerAdapter(private val tariffs: List<Tariff>) : RecyclerView.Adapter<TariffRecyclerAdapter.TariffViewHolder>() {
+class TariffRecyclerAdapter(private val tariffs: List<TariffModel>) : RecyclerView.Adapter<TariffRecyclerAdapter.TariffViewHolder>() {
 
     class TariffViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tariffNameView: TextView = itemView.findViewById(R.id.tariffName)

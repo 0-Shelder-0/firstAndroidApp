@@ -1,6 +1,8 @@
 package com.example.myapplication.models
 
-class UserInfo(private val info: String, private val iconId: Int) {
-    fun getInfo(): String = info
-    fun getIconId(): Int = iconId
-}
+data class UserInfo(
+    var firstName: String? = null,
+    var lastName: String? = null,
+    var address: String? = null,
+    var id: Int? = null,
+)

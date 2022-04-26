@@ -9,8 +9,11 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 import com.example.myapplication.models.UserInfo
+import com.example.myapplication.models.UserModel
 
-class UserRecyclerAdapter(private val userInfoList: List<UserInfo>) : RecyclerView.Adapter<UserRecyclerAdapter.UserViewHolder>() {
+class UserRecyclerAdapter(
+    private val userInfoList: List<UserModel>
+) : RecyclerView.Adapter<UserRecyclerAdapter.UserViewHolder>() {
 
     class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val userIconView: ImageView = itemView.findViewById(R.id.user_icon)
